@@ -17,8 +17,8 @@ Create 4 wordpress pages with these exact names: add-entry, custom-search, searc
 The main file is called CustomSearch.php. It is uploaded into the classes folder in the wordpress backend and then rendered by adding the following lines wherever you like:
 
 ``` require('wp-content/themes/YOURTHEME/classes/CustomSearch.php');
-$customSearch = new CustomSearch();
-if($customSearch->onCustomFunctionPage) {} ```
+```$customSearch = new CustomSearch();
+```if($customSearch->onCustomFunctionPage) {} 
 
 I'm also sending you a MYSQL file to upload to your database. I added a column for ids, which is necessary. In your website hosting provider backend, look for PHPMyAdmin and open it. Then go into the wordpress database and import the MYSQL file.
 If you can't figure out how to implement it of if you have any questions, let me know.
