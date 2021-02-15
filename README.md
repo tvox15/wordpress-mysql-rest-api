@@ -15,9 +15,13 @@ I use PDO prepared statements
 
 # Wordpress Pages
 There are 4 pages:
+
 Search: Has a search bar, filters, and subfilters that change based on the filter you choose
+
 Results: Displays the results and an edit button. Clicking edit will bring you to the edit page.
+
 Edit entry: If you enter the correct password, you can edit the entry
+
 Add page: If you enter the correct password, you can add an entry
 
 # Implementation:
