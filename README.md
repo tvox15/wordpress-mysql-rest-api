@@ -1,8 +1,17 @@
-# wordpress-mysql-rest-api
-A REST API for a custom-implemented wordpress search bar (Completed 1/22/2021
+# wordpress-mysql-rest-api (PHP, MySQL, HTML, CSS, Javascript, Jquery)
+A REST API for a custom-implemented wordpress search bar (Completed 1/22/2021)
+
 A client asked me to create Add, Edit, Delete, and search bar for his data and implement it on a Wordpress site.
 
-The add, edit, and delete functions are hidden behind a password field (Instead of a session-bassed authentication system)
+The add, edit, and delete functions are hidden behind a password field (Instead of a session-bassed authentication system).
+
+The search bar is open for anyone to use. I have added images in the images folder for easy viewing of each page.
+
+# CSS
+It is 100% custom CSS. Jquery is used for changing the filters and subfilters and displaying error messages
+
+# Security
+I use PDO prepared statements 
 
 # Wordpress Pages
 There are 4 pages:
@@ -11,10 +20,10 @@ Results: Displays the results and an edit button. Clicking edit will bring you t
 Edit entry: If you enter the correct password, you can edit the entry
 Add page: If you enter the correct password, you can add an entry
 
-Implementation:
+# Implementation:
 Create 4 wordpress pages with these exact names: add-entry, custom-search, search-results and edit-entries
 
-The main file is called CustomSearch.php. It is uploaded into the classes folder in the wordpress backend and then rendered by adding the following lines wherever you like:
+The main file is called CustomSearch.php. It is uploaded into the classes folder in the wordpress backend and then rendered by adding the following lines wherever desired:
 
 ```
 require('wp-content/themes/YOURTHEME/classes/CustomSearch.php');
@@ -22,5 +31,3 @@ $customSearch = new CustomSearch();
 if($customSearch->onCustomFunctionPage) {} 
 ```
 
-I'm also sending you a MYSQL file to upload to your database. I added a column for ids, which is necessary. In your website hosting provider backend, look for PHPMyAdmin and open it. Then go into the wordpress database and import the MYSQL file.
-If you can't figure out how to implement it of if you have any questions, let me know.
